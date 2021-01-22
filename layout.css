@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.landing_page_logo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.landing_page_buttons{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.landing_page_buttons{
+    height: 300px;
+}
+
+.button1{
+    margin-top: 20px;
+}
+
+.button2{
+    margin-top: 20px;
+}
+
+.button3{
+    margin-top: 20px;
+}
+
+.landing_page_buttons_container{
+    margin-right: 600px;
+    margin-left: 600px;
+}
