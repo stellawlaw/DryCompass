@@ -47,3 +47,15 @@ header{
     background-color: black;
     color:white;
 }
+.rating{
+    color:white;
+    font-size: x-large;
+}
+.stars {
+    align-items: center;
+    color: gold;
+    display: flex;
+    font-size: 150px;
+    height: 50vh;
+    justify-content: center;
+  }
