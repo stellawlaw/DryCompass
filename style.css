@@ -1,15 +1,26 @@
 html {
     background-color: black;
+   
 }
-
+.page_description{
+    color: white;
+    font-size: 18pt;
+    font-family: 'Covered By Your Grace', cursive;
+}
 .button1 {
     border-radius: 15px;
+    font-size: x-large;
+    font-family: 'Covered By Your Grace', cursive;
 }
 
 .button2 {
     border-radius: 15px;
+    font-size: x-large;
+    font-family: 'Covered By Your Grace', cursive;
 }
 
 .button3 {
     border-radius: 15px;
+    font-size: x-large;
+    font-family: 'Covered By Your Grace', cursive;
 }
