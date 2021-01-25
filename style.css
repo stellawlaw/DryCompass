@@ -1,3 +1,15 @@
-html{
+html {
     background-color: black;
+}
+
+.button1 {
+    border-radius: 15px;
+}
+
+.button2 {
+    border-radius: 15px;
+}
+
+.button3 {
+    border-radius: 15px;
 }
