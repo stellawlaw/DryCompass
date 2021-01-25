@@ -20,13 +20,23 @@
     padding-left: 10%;
     padding-right: 10%;
 }
+h1{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
 .landing_page_buttons {
     display: grid;
     grid-template-rows: auto;
+    height: 35vh;
+    width: 60%;
+    margin: 0 auto;
 }
 
-.landing_page_buttons {
+.establishment_buttons{
+    display: grid;
+    grid-template-rows: auto;
     height: 35vh;
     width: 60%;
     margin: 0 auto;
@@ -45,6 +55,19 @@
     background-color: rgb(255, 217, 0);
 }
 
+.button4:hover{
+    cursor: pointer;
+    background-color: rgb(255, 217, 0);
+}
+.button5:hover{
+    cursor: pointer;
+    background-color: rgb(255, 217, 0);
+}
+.backbutton:hover{
+    cursor: pointer;
+    background-color: rgb(255, 217, 0);
+}
+
 .button1 {
     margin-top: 5%;
 }
@@ -56,9 +79,15 @@
 .button3 {
     margin-top: 10%;
 }
+.button4 {
+    margin-top: 10%;
+}
 
+.button5 {
+    margin-top: 10%;
+}
 
-/* .landing_page_buttons_container {
-    margin-right: 600px;
-    margin-left: 600px;
-} */
+.backbutton {
+    margin-top: 10%;
+    padding: 1%;
+}
