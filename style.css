@@ -1,94 +1,104 @@
-html {
-    background-color: black;
-    font-family: 'Covered By Your Grace', cursive;
-}
-.page_description{
-    color: white;
-    font-size: 18pt;   
-}
-
-header{
-    color:rgb(255, 217, 0);
-}
-.button1 {
-    border-radius: 15px;
-    font-size: x-large;
-    font-family: 'Covered By Your Grace', cursive;
-}
-
-.button2 {
-    border-radius: 15px;
-    font-size: x-large;
-    font-family: 'Covered By Your Grace', cursive;
-}
-
-.button3 {
-    border-radius: 15px;
-    font-size: x-large;
-    font-family: 'Covered By Your Grace', cursive;
-}
-.button4 {
-    border-radius: 15px;
-    font-size: x-large;
-    font-family: 'Covered By Your Grace', cursive;
-}
-
-.button5 {
-    border-radius: 15px;
-    font-size: x-large;
-    font-family: 'Covered By Your Grace', cursive;
-}
-.backbutton {
-    border-radius: 15px;
-    font-size: 4vw;
-    font-family: 'Covered By Your Grace', cursive;
-    background-color: black;
-    color:white;
-}
-.rating{
-    color:white;
-
-}
-.stars {
-    color: gold;
-    font-size: 4vw;
-  }
-
-h1{
-    font-size: 8vw;
-}
-
-p{
-    color: white;
-    font-size: 4vw;
-} 
-span{
-    color: white;
-    font-size: 4vw;
-}
-.title{
-    text-decoration: underline;
-}
-h2{
-    color: white;
-    font-size: 6vw;
-} 
-
-a{
-    font-size: 4vw;
-}
-
-a:link{
- color: gold;
-
-}
-a:visited{
-    color: gold;
-}
-
-footer{
-    color: white;
-    font-size: 3vw;
-
-}
-  
+ html {
+     background-color: black;
+     font-family: 'Covered By Your Grace', cursive;
+ }
+ 
+ .page_description {
+     color: white;
+     font-size: 5vw;
+     font-family: 'Covered By Your Grace', cursive;
+ }
+ 
+ header {
+     color: rgb(255, 217, 0);
+ }
+ 
+ .button1 {
+     border-radius: 15px;
+     font-size: 5vw;
+     font-family: 'Covered By Your Grace', cursive;
+ }
+ 
+ .button2 {
+     border-radius: 15px;
+     font-size: 5vw;
+     font-family: 'Covered By Your Grace', cursive;
+ }
+ 
+ .button3 {
+     border-radius: 15px;
+     font-size: 5vw;
+     font-family: 'Covered By Your Grace', cursive;
+ }
+ 
+ .button4 {
+     border-radius: 15px;
+     font-size: 5vw;
+     font-family: 'Covered By Your Grace', cursive;
+ }
+ 
+ .button5 {
+     border-radius: 15px;
+     font-size: 5vw;
+     font-family: 'Covered By Your Grace', cursive;
+ }
+ 
+ .backbutton {
+     border-radius: 15px;
+     font-size: 4vw;
+     font-family: 'Covered By Your Grace', cursive;
+     background-color: black;
+     color: white;
+ }
+ 
+ .rating {
+     color: white;
+ }
+ 
+ .stars {
+     color: gold;
+     font-size: 4vw;
+ }
+ 
+ h1 {
+     font-size: 8vw;
+ }
+ 
+ p {
+     color: white;
+     font-size: 4vw;
+     font-family: 'Roboto', sans-serif;
+ }
+ 
+ span {
+     color: white;
+     font-size: 4vw;
+     font-family: 'Roboto', sans-serif;
+ }
+ 
+ .title {
+     text-decoration: underline;
+ }
+ 
+ h2 {
+     color: white;
+     font-size: 6vw;
+ }
+ 
+ a {
+     font-size: 4vw;
+     font-family: 'Roboto', sans-serif;
+ }
+ 
+ a:link {
+     color: gold;
+ }
+ 
+ a:visited {
+     color: gold;
+ }
+ 
+ footer {
+     color: white;
+     font-size: 3vw;
+ }

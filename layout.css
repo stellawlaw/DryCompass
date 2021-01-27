@@ -9,27 +9,28 @@
     min-height: 100vh;
 }
 
-.content{
+.content {
     padding-bottom: 2.5rem;
 }
 
-.logo{
+.logo {
     display: grid;
 }
 
 .landing_page_logo {
-    padding-top: 10%;
+    padding-top: 7%;
     padding-bottom: 5%;
     width: 50vw;
     margin: 0 auto;
 }
 
-.page_description{
+.page_description {
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
 }
-h1{
+
+h1 {
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
@@ -38,12 +39,12 @@ h1{
 .landing_page_buttons {
     display: grid;
     grid-template-rows: auto;
-    height: 35vh;
+    /* height: 35vh; */
     width: 60%;
     margin: 0 auto;
 }
 
-.establishment_buttons{
+.establishment_buttons {
     display: grid;
     grid-template-rows: auto;
     height: 35vh;
@@ -51,28 +52,32 @@ h1{
     margin: 0 auto;
 }
 
-.button1:hover{
-    cursor: pointer;
-    background-color: rgb(255, 217, 0);
-}
-.button2:hover{
-    cursor: pointer;
-    background-color: rgb(255, 217, 0);
-}
-.button3:hover{
+.button1:hover {
     cursor: pointer;
     background-color: rgb(255, 217, 0);
 }
 
-.button4:hover{
+.button2:hover {
     cursor: pointer;
     background-color: rgb(255, 217, 0);
 }
-.button5:hover{
+
+.button3:hover {
     cursor: pointer;
     background-color: rgb(255, 217, 0);
 }
-.backbutton:hover{
+
+.button4:hover {
+    cursor: pointer;
+    background-color: rgb(255, 217, 0);
+}
+
+.button5:hover {
+    cursor: pointer;
+    background-color: rgb(255, 217, 0);
+}
+
+.backbutton:hover {
     cursor: pointer;
     background-color: rgb(255, 217, 0);
 }
@@ -82,18 +87,20 @@ h1{
 }
 
 .button2 {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .button3 {
-    margin-top: 10%;
+    margin-top: 5%;
 }
+
 .button4 {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .button5 {
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .backbutton {
@@ -102,40 +109,64 @@ h1{
     margin-left: 5%;
 }
 
-.single_view_layout{
+.single_view_layout {
     max-width: 100%;
 }
 
-img{
-     width: 50vw;
-     padding-top: 5%;
+img {
+    width: 50vw;
+    padding-top: 5%;
 }
 
-.venue_photo{
+.venue_photo {
     display: grid;
     justify-content: center;
 }
 
-.info{
+.info {
     padding-left: 10%;
     padding-top: 10%;
 }
 
-.beverage_list{
+.street-address {
+    padding-left: 4%;
+}
+
+.city-address {
+    padding-left: 23%;
+}
+
+.phone {
+    margin-left: 8%;
+}
+
+.hours {
+    margin-left: 8%;
+}
+
+.distance {
+    margin-left: 3%;
+}
+
+.ETA {
+    margin-left: 13%;
+}
+
+.beverage_list {
     padding-top: 10%;
     padding-left: 10%;
 }
 
-.rating{
+.rating {
     padding-left: 10%;
     padding-top: 10%;
 }
 
-.stars{
-    padding-left: 10%; 
+.stars {
+    padding-left: 10%;
 }
 
-#footer{
+#footer {
     text-align: center;
     width: 100%;
     position: absolute;
