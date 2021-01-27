@@ -92,3 +92,38 @@ h1{
     padding: 1%;
     margin-left: 5%;
 }
+
+.single_view_layout{
+    max-width: 100%;
+}
+
+img{
+     width: 200px;
+     padding-top: 5%;
+}
+
+.venue_photo{
+    display: grid;
+    justify-content: center;
+}
+
+.info{
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.beverage_list{
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.rating{
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.stars{
+    padding-left: 10%;
+   
+    
+}

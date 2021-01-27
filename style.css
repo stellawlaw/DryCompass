@@ -49,13 +49,30 @@ header{
 }
 .rating{
     color:white;
-    font-size: x-large;
+
 }
 .stars {
-    align-items: center;
     color: gold;
-    display: flex;
-    font-size: 150px;
-    height: 50vh;
-    justify-content: center;
+    font-size: 25px;
   }
+
+p{
+    color: white;
+} 
+span{
+    color: white;
+}
+.title{
+    text-decoration: underline;
+}
+h2{
+    color: white;
+} 
+
+a:link{
+ color: gold;
+}
+a:visited{
+    color: gold;
+}
+  
