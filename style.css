@@ -4,13 +4,11 @@ html {
 }
 .page_description{
     color: white;
-    font-size: 18pt;
-    
+    font-size: 18pt;   
 }
 
 header{
     color:rgb(255, 217, 0);
-
 }
 .button1 {
     border-radius: 15px;
@@ -42,7 +40,7 @@ header{
 }
 .backbutton {
     border-radius: 15px;
-    font-size: medium;
+    font-size: 4vw;
     font-family: 'Covered By Your Grace', cursive;
     background-color: black;
     color:white;
@@ -53,26 +51,44 @@ header{
 }
 .stars {
     color: gold;
-    font-size: 25px;
+    font-size: 4vw;
   }
+
+h1{
+    font-size: 8vw;
+}
 
 p{
     color: white;
+    font-size: 4vw;
 } 
 span{
     color: white;
+    font-size: 4vw;
 }
 .title{
     text-decoration: underline;
 }
 h2{
     color: white;
+    font-size: 6vw;
 } 
+
+a{
+    font-size: 4vw;
+}
 
 a:link{
  color: gold;
+
 }
 a:visited{
     color: gold;
+}
+
+footer{
+    color: white;
+    font-size: 3vw;
+
 }
   

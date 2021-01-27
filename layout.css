@@ -5,6 +5,15 @@
 }
 
 .container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content{
+    padding-bottom: 2.5rem;
+}
+
+.logo{
     display: grid;
 }
 
@@ -98,7 +107,7 @@ h1{
 }
 
 img{
-     width: 200px;
+     width: 50vw;
      padding-top: 5%;
 }
 
@@ -123,7 +132,13 @@ img{
 }
 
 .stars{
-    padding-left: 10%;
-   
-    
+    padding-left: 10%; 
+}
+
+#footer{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
 }
