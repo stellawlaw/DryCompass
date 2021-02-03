@@ -26,12 +26,14 @@ public class JPAWiringTest {
 
     @Test
     public void placeObjectShouldHaveADetailsObjectAndABeveragesObject(){
-        Beverages testBeverages = new Beverages("NABev1", "NABev2", "NABev3");
+
+        Beverages testBeverages = new Beverages("NABev1");
         beveragesRepo.save(testBeverages);
-        Details testDetails = new Details("streetAddress", "cityAddress", "phone", "hours", "distance","ETA", "website", "picture");
-        detailsRepo.save(testDetails);
-        Place testPlace = new Place("name", 0.00, 0.00, testDetails, testBeverages);
+        Place testPlace = new Place("name", 0.00, 0.00);
         placeRepo.save(testPlace);
+        Details testDetails = new Details(testPlace,"streetAddress", "cityAddress", "phone", "hours", "distance","ETA", "website", "picture", testBeverages);
+        detailsRepo.save(testDetails);
+
         flushAndClear();
         Place retrievedPlace = placeRepo.findById(testPlace.getId()).get();
         assertThat(retrievedPlace).isEqualTo(testPlace);

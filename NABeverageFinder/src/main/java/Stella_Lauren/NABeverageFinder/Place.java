@@ -1,28 +1,27 @@
 package Stella_Lauren.NABeverageFinder;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 public class Place {
     private String name;
     private double longCoords;
     private double latCoords;
-    protected Details details;
-    protected Beverages beverages;
+
     @Id
     @GeneratedValue
     private Long id;
+    @OneToOne
+    private Details details;
 
     protected Place(){}
 
-    public Place(String name, double longCoords, double latCoords, Details details, Beverages beverages) {
+    public Place(String name, double longCoords, double latCoords) {
         this.name = name;
         this.longCoords = longCoords;
         this.latCoords = latCoords;
-        this.details = details;
-        this.beverages = beverages;
+
     }
 
     public String getName() {
@@ -40,4 +39,31 @@ public class Place {
     public Long getId() {
         return id;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Place place = (Place) o;
+        return Double.compare(place.longCoords, longCoords) == 0 &&
+                Double.compare(place.latCoords, latCoords) == 0 &&
+                Objects.equals(name, place.name) &&
+                Objects.equals(id, place.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, longCoords, latCoords, id);
+    }
+
+    @Override
+    public String toString() {
+        return "Place{" +
+                "name='" + name + '\'' +
+                ", longCoords=" + longCoords +
+                ", latCoords=" + latCoords +
+                ", id=" + id +
+                '}';
+    }
 }
+
