@@ -1,4 +1,4 @@
-package Stella_Lauren.NABeverageFinder;
+package Stella_Lauren.NABeverageFinder.resources;
 
 import javax.persistence.*;
 import java.util.Objects;

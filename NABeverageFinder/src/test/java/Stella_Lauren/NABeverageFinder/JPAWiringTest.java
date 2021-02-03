@@ -1,5 +1,11 @@
 package Stella_Lauren.NABeverageFinder;
 
+import Stella_Lauren.NABeverageFinder.resources.Beverages;
+import Stella_Lauren.NABeverageFinder.resources.Details;
+import Stella_Lauren.NABeverageFinder.resources.Place;
+import Stella_Lauren.NABeverageFinder.storage.BeveragesRepository;
+import Stella_Lauren.NABeverageFinder.storage.DetailsRepository;
+import Stella_Lauren.NABeverageFinder.storage.PlaceRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -26,7 +32,6 @@ public class JPAWiringTest {
 
     @Test
     public void placeObjectShouldHaveADetailsObjectAndABeveragesObject(){
-
         Beverages testBeverages = new Beverages("NABev1");
         beveragesRepo.save(testBeverages);
         Place testPlace = new Place("name", "bar", 0.00, 0.00 );

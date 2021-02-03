@@ -1,9 +1,6 @@
-package Stella_Lauren.NABeverageFinder;
+package Stella_Lauren.NABeverageFinder.resources;
 
 import javax.persistence.*;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Set;
 
 @Entity
 public class Beverages {
