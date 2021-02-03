@@ -11,6 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
@@ -41,6 +44,18 @@ public class JPAWiringTest {
         flushAndClear();
         Place retrievedPlace = placeRepo.findById(testPlace.getId()).get();
         assertThat(retrievedPlace).isEqualTo(testPlace);
+    }
+
+    @Test
+    public void shouldRetrieveAllBars(){
+        List<Place> bars = new ArrayList<>();
+        Place testPlace1 = new Place("", "bar", 22.22, 22.22);
+        Place testPlace2 = new Place("", "brewery", 22.22, 22.22);
+        placeRepo.save(testPlace1);
+        placeRepo.save(testPlace2);
+        Place retrieveBars =
+
+
     }
 
 }

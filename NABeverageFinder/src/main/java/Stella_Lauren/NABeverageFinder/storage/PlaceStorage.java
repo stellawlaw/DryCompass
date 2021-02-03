@@ -4,6 +4,9 @@ import Stella_Lauren.NABeverageFinder.resources.Place;
 import Stella_Lauren.NABeverageFinder.storage.PlaceRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class PlaceStorage {
     private PlaceRepository placeRepo;
@@ -23,5 +26,14 @@ public class PlaceStorage {
         return placeRepo.findAll();
     }
 
-
+    public Iterable<Place> retrieveAllBars() {
+        Iterable<Place> allPlaces = placeRepo.findAll();
+        List<Place> bars = new ArrayList<Place>();
+        for(allPlaces: bars){
+            if(allPlaces.getType() == "bar"){
+                bars.add(place);
+            }
+        }
+        return bars;
+    }
 }

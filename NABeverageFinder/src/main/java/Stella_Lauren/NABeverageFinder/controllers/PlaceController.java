@@ -27,6 +27,11 @@ public class PlaceController {
         return placeStorage.retrievePlaceById(id);
     }
 
-    
+    @GetMapping("/api/bars")
+    public Iterable<Place> retrieveAllBars(){
+        return placeStorage.retrieveAllBars();
+    }
+
+
 
 }
