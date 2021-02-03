@@ -29,11 +29,10 @@ public class JPAWiringTest {
 
         Beverages testBeverages = new Beverages("NABev1");
         beveragesRepo.save(testBeverages);
-        Place testPlace = new Place("name", 0.00, 0.00);
+        Place testPlace = new Place("name", "bar", 0.00, 0.00 );
         placeRepo.save(testPlace);
         Details testDetails = new Details(testPlace,"streetAddress", "cityAddress", "phone", "hours", "distance","ETA", "website", "picture", testBeverages);
         detailsRepo.save(testDetails);
-
         flushAndClear();
         Place retrievedPlace = placeRepo.findById(testPlace.getId()).get();
         assertThat(retrievedPlace).isEqualTo(testPlace);
