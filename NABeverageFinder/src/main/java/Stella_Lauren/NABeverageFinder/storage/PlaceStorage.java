@@ -29,8 +29,8 @@ public class PlaceStorage {
     public Iterable<Place> retrieveAllBars() {
         Iterable<Place> allPlaces = placeRepo.findAll();
         List<Place> bars = new ArrayList<Place>();
-        for(allPlaces: bars){
-            if(allPlaces.getType() == "bar"){
+        for(Place place: allPlaces){
+            if(place.getType() == "bar"){
                 bars.add(place);
             }
         }

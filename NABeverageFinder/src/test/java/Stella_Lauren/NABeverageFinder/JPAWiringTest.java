@@ -6,13 +6,11 @@ import Stella_Lauren.NABeverageFinder.resources.Place;
 import Stella_Lauren.NABeverageFinder.storage.BeveragesRepository;
 import Stella_Lauren.NABeverageFinder.storage.DetailsRepository;
 import Stella_Lauren.NABeverageFinder.storage.PlaceRepository;
+import Stella_Lauren.NABeverageFinder.storage.PlaceStorage;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -27,6 +25,8 @@ public class JPAWiringTest {
     private PlaceRepository placeRepo;
     @Autowired
     private TestEntityManager entityManager;
+//    @Autowired
+//    private PlaceStorage placeStorage;
 
     private void flushAndClear(){
         entityManager.flush();
@@ -48,14 +48,13 @@ public class JPAWiringTest {
 
     @Test
     public void shouldRetrieveAllBars(){
-        List<Place> bars = new ArrayList<>();
         Place testPlace1 = new Place("", "bar", 22.22, 22.22);
         Place testPlace2 = new Place("", "brewery", 22.22, 22.22);
         placeRepo.save(testPlace1);
         placeRepo.save(testPlace2);
-        Place retrieveBars =
-
+        flushAndClear();
+        Iterable<Place> bars = placeRepo.;
+        assertThat(bars).contains(testPlace1);
 
     }
-
 }
