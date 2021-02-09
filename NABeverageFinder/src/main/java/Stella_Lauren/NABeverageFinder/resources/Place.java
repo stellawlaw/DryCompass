@@ -1,6 +1,10 @@
 package Stella_Lauren.NABeverageFinder.resources;
 
+import Stella_Lauren.NABeverageFinder.storage.PlaceRepository;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -9,6 +13,7 @@ public class Place {
     private String type;
     private double longCoords;
     private double latCoords;
+
 
     @Id
     @GeneratedValue
@@ -44,6 +49,7 @@ public class Place {
     public Long getId() {
         return id;
     }
+
 
     @Override
     public boolean equals(Object o) {

@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 public class PlaceStorage {
-    private PlaceRepository placeRepo;
+    protected PlaceRepository placeRepo;
 
     public PlaceStorage(PlaceRepository placeRepo) {
         this.placeRepo = placeRepo;
@@ -35,5 +35,27 @@ public class PlaceStorage {
             }
         }
         return bars;
+    }
+
+    public Iterable<Place> retrieveAllRestaurants() {
+        Iterable<Place> allPlaces = placeRepo.findAll();
+        List<Place> restaurants = new ArrayList<Place>();
+        for(Place place: allPlaces){
+            if(place.getType() == "restaurant"){
+                restaurants.add(place);
+            }
+        }
+        return restaurants;
+    }
+
+    public Iterable<Place> retrieveAllBreweries() {
+        Iterable<Place> allPlaces = placeRepo.findAll();
+        List<Place> breweries = new ArrayList<Place>();
+        for(Place place: allPlaces){
+            if(place.getType() == "brewery"){
+                breweries.add(place);
+            }
+        }
+        return breweries;
     }
 }
