@@ -32,6 +32,18 @@ public class PlaceController {
         return placeStorage.retrieveAllBars();
     }
 
+    @GetMapping("/api/restaurants")
+    public Iterable<Place> retrieveAllRestaurants(){
+        return placeStorage.retrieveAllRestaurants();
+    }
+
+    @GetMapping("/api/breweries")
+    public Iterable<Place> retrieveAllBreweries(){
+        return placeStorage.retrieveAllBreweries();
+    }
+    
+
+
 
 
 }
