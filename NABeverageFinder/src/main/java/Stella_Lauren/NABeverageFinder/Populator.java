@@ -21,7 +21,7 @@ public class Populator {
         this.detailsRepo = detailsRepo;
     }
 
-    
+
     public void run(String... args) throws Exception{
 
         Place brewDogSN = new Place("BrewDog Short North", "Brewery", 22.22, 22.22);
