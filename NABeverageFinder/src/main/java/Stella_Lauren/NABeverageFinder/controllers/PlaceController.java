@@ -41,7 +41,7 @@ public class PlaceController {
     public Iterable<Place> retrieveAllBreweries(){
         return placeStorage.retrieveAllBreweries();
     }
-    
+
 
 
 

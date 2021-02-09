@@ -41,7 +41,7 @@ public class JPAWiringTest {
         beveragesRepo.save(testBeverages);
         Place testPlace = new Place("name", "bar", 0.00, 0.00 );
         placeRepo.save(testPlace);
-        Details testDetails = new Details(testPlace,"streetAddress", "cityAddress", "phone", "hours", "distance","ETA", "website", "picture", testBeverages);
+        Details testDetails = new Details(testPlace,"streetAddress", "cityAddress", "phone", "hours", 22.22, 22.22, "website", "picture", testBeverages);
         detailsRepo.save(testDetails);
         flushAndClear();
         Place retrievedPlace = placeRepo.findById(testPlace.getId()).get();
